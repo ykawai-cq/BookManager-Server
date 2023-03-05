@@ -18,6 +18,11 @@ module Api
       end
     
       def destroy
+        if session.delete(:user_id)
+          render json: { status: '200'}
+        else
+          render json: { result: { message: '見つかりません', description: 'システム管理者にお問い合わせください' } }
+        end
       end
     end
   end
