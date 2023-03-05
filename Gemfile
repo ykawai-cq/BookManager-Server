@@ -12,6 +12,7 @@ gem 'dotenv-rails'
 gem 'pry-rails'
 gem 'rubocop', require:false
 gem 'rubocop-rails', require:false
+gem 'rack-cors'
 
 # Use mysql as the database for Active Record
 gem "mysql2", "~> 0.5"
